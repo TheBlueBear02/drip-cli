@@ -1,0 +1,19 @@
+{
+  "name": "drip",
+  "version": "1.0.0",
+  "description": "CLI tool to download design skill folders from GitHub",
+  "main": "index.js",
+  "bin": {
+    "drip": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["cli", "design", "skills"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "node-fetch": "^2.7.0"
+  }
+}
