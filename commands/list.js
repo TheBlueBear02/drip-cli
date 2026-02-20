@@ -5,9 +5,8 @@ const { fetchRegistry } = require('../utils/fetch');
  */
 async function listSkills() {
   try {
-    const registry = await fetchRegistry();
-    
-    if (!registry.skills || registry.skills.length === 0) {
+    const skills = Array.isArray(registry) ? registry : registry.skills;
+    if (!skills || skills.length === 0) {
       console.log('No skills available in the registry.');
       return;
     }
