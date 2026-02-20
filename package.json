@@ -1,7 +1,7 @@
 {
-  "name": "drip",
+  "name": "getdrip",
   "version": "1.0.0",
-  "description": "CLI tool to download design skill folders from GitHub",
+  "description": "Stop shipping generic AI UIs. npx getdrip to add drip to your project.",
   "main": "index.js",
   "bin": {
     "drip": "./index.js"

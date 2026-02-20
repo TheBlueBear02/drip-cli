@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
 
-const GITHUB_USERNAME = 'YOUR_USERNAME'; // TODO: Replace with actual username
+const GITHUB_USERNAME = 'TheBlueBear02'; // TODO: Replace with actual username
 const REPO_NAME = 'drip-skills';
 const BASE_URL = `https://github.com/${GITHUB_USERNAME}/${REPO_NAME}`;
 
