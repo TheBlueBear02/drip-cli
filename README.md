@@ -1,2 +1,2 @@
 # drip-cli
-One command. Your AI agent builds beautiful UIs.
+Stop shipping generic AI UIs. Use npx getdrip to add drip to your project.
