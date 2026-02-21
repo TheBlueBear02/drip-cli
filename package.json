@@ -9,11 +9,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["cli", "design", "skills"],
+  "keywords": [
+    "cli",
+    "design",
+    "skills"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "adm-zip": "^0.5.10",
+    "framer-motion": "^10.0.0",
+    "lucide-react": "^0.263.0",
     "node-fetch": "^2.7.0"
   }
 }

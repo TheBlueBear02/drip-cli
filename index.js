@@ -3,6 +3,7 @@
 const { addSkill } = require('./commands/add');
 const { listSkills } = require('./commands/list');
 const { removeSkill } = require('./commands/remove');
+const { updateSkill } = require('./commands/update');
 
 const command = process.argv[2];
 const args = process.argv.slice(3);
@@ -29,6 +30,15 @@ switch (command) {
     }
     removeSkill(args[0]);
     break;
+
+  case 'update':
+    if (args.length === 0) {
+      console.error('Error: Please provide a skill name');
+      console.error('Usage: drip update <skill-name>');
+      process.exit(1);
+    }
+    updateSkill(args[0]);
+    break;
   
   default:
     if (!command) {
@@ -38,6 +48,7 @@ switch (command) {
       console.log('  add <skill-name>    Add a skill to your project');
       console.log('  list               List all available skills');
       console.log('  remove <skill-name> Remove a skill from your project');
+      console.log('  update <skill-name> Update a skill to the latest version');
     } else {
       console.error(`Unknown command: ${command}`);
       console.error('Usage: drip <command>');
