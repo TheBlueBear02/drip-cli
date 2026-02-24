@@ -11,3 +11,14 @@ You can only have **one GetDRIP style skill per project**.
 - **Update** `npx getdrip update <style-skill-name>`
 
 If you try to add a second style skill (for example, adding `clay-premium` after `art-deco`), the CLI will refuse to install it and print:
+
+## Analytics
+
+When you run `npx getdrip add <skill-name>`, we are saving this data only:
+
+| Field | Value | Purpose |
+|---|---|---|
+| `skill` | e.g. `"linear-modern"` | Know which skills are most popular |
+| `cli_version` | e.g. `"1.1.0"` | Track adoption across versions |
+
+**No personal data is collected.** No user ID, no IP address, no project name, no file paths. The event is fire-and-forget — if it fails, the CLI continues normally.

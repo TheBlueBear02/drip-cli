@@ -1,6 +1,6 @@
 {
   "name": "getdrip",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Stop shipping generic AI UIs. npx getdrip to add drip to your project.",
   "main": "index.js",
   "bin": {

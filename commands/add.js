@@ -5,6 +5,7 @@ const { downloadRepoZip } = require('../utils/fetch');
 const { extractSkillFolder } = require('../utils/extract');
 const { printSuccessMessage } = require('../utils/print');
 const { injectAgentInstructions } = require('../utils/agentFiles');
+const { trackDownload } = require('../utils/analytics');
 
 /**
  * Add a skill to the current project
@@ -72,6 +73,9 @@ async function addSkill(skillName) {
     
     // Extract the skill folder
     await extractSkillFolder(zipBuffer, skillName, skillsDir);
+
+    // Track the download (fire-and-forget)
+    trackDownload(skillName);
 
     // Write agent-frontend-instruction.md to project root
     const instructionPath = path.join(process.cwd(), 'agent-frontend-instruction.md');
