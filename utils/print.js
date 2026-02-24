@@ -26,6 +26,7 @@ function printSuccessMessage(skillName) {
   console.log('');
   console.log(`  ${separator}`);
   console.log(`  Your project is configured with the ${skillName} design system.`);
+  console.log('');
   console.log('  To redesign existing UI, tell your agent:');
   console.log(`  "Read ${skillPath}/SKILL.md and redesign`);
   console.log('  the existing UI to match this design system."');

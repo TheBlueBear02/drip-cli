@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 const POSTHOG_API_KEY = 'phc_RE2H5Eza6X6DxDeIqvzPipQ8jij0p3kDaZriYy3ohVs';
-const POSTHOG_HOST = 'https://us.i.posthog.com';
+const POSTHOG_HOST = 'https://eu.i.posthog.com';
 
 /**
  * Track a skill download event. Fire-and-forget — never throws.

@@ -74,8 +74,8 @@ async function addSkill(skillName) {
     // Extract the skill folder
     await extractSkillFolder(zipBuffer, skillName, skillsDir);
 
-    // Track the download (fire-and-forget)
-    trackDownload(skillName);
+    // Track the download
+    await trackDownload(skillName);
 
     // Write agent-frontend-instruction.md to project root
     const instructionPath = path.join(process.cwd(), 'agent-frontend-instruction.md');
