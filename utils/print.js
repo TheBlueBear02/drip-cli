@@ -3,7 +3,7 @@
  * @param {string} skillName - Name of the skill that was added
  */
 function printSuccessMessage(skillName) {
-  const version = '1.0.0';
+  const version = '1.1.0';
   const skillPath = `skills/${skillName}`;
   
   const boxWidth = 49;
@@ -21,14 +21,17 @@ function printSuccessMessage(skillName) {
   console.log('');
   console.log(`  ✓ ${skillName} installed`);
   console.log(`  ✓ Placed at: ${skillPath}/`);
+  console.log(`  ✓ agent-frontend-instruction.md created at project root`);
+  console.log(`  ✓ CLAUDE.md, .cursorrules, .windsurfrules updated`);
   console.log('');
   console.log(`  ${separator}`);
-  console.log('  NOW TELL YOUR AGENT:');
+  console.log('  Your project is configured with the ${skillName} design system.');
   console.log(`  ${separator}`);
   console.log('');
-  console.log(`  "Read ${skillPath}/SKILL.md and follow`);
-  console.log('  its instructions. Then redesign my UI to match');
-  console.log('  this design system exactly."');
+  console.log('  To redesign existing UI, tell your agent:');
+  console.log('');
+  console.log(`  "Read ${skillPath}/SKILL.md and redesign`);
+  console.log('  the existing UI to match this design system."');
   console.log('');
   console.log(`  ${separator}`);
   console.log('');
